@@ -39,7 +39,7 @@ function Register() {
                 <Box>
                     <form onSubmit={handleSubmit}>
                         Nome: <input name="userName" type="text" value={userName} onChange={(e) => setUserName(e.target.value)}/>
-                        CPF: <input name="cpf" type="text" value={cpf} onChange={(e) => setCpf(e.target.value)}/>
+                        CPF: <input name="cpf" type="text" value={cpf} onChange={(e) => setCpf(e.target.value.replace(/\D/g, ''))}/>
                         Senha: <input name="password" type="text" value={password} onChange={(e) => setPassword(e.target.value)}/>
                         <button type="submit">Registrar</button>
                     </form>

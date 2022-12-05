@@ -7,7 +7,7 @@ import { AuthContext } from '../../context/authContext';
 function Login() {
     const [cpf, setCpf]= useState("")
     const [password, setPassword]= useState("")
-    const { user, signIn, signed } = useContext(AuthContext);
+    const { user, signIn, signed } = useContext(AuthContext)
     const navigate = useNavigate()
 
     async function handleLogin(e){
@@ -29,7 +29,7 @@ function Login() {
     
                     <Box>
                         <form onSubmit={handleLogin}>
-                            CPF <input name="cpf" type="text" value={cpf} onChange={(e) => setCpf(e.target.value)}/>
+                            CPF <input name="cpf" type="text" value={cpf} onChange={(e) => setCpf(e.target.value.replace(/\D/g, ''))}/>
                             Senha <input name="password" type="password" value={password} onChange={(e) => setPassword(e.target.value)}/>
                             <button type="submit">Login</button>
                         </form>

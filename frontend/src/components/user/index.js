@@ -1,7 +1,8 @@
 import axios from 'axios'
-import React, {useEffect, useState} from 'react'
+import React, {useEffect, useState, useContext} from 'react'
 import { useParams } from 'react-router-dom'
 import { Box, Container } from './styles'
+import { AuthContext } from '../../context/authContext';
 
 function User() {
   const [user, setUser] = useState({})
@@ -10,6 +11,8 @@ function User() {
   const [deposited, setDeposited] = useState(0)
   const [transfer, setTransfer] = useState(0)
   const [transferred, setTransferred] =  useState(0)
+  const { singOut } = useContext(AuthContext)
+
   const {id} = useParams()
   const storageToken = localStorage.getItem("@Auth:token");
   const authAxios = axios.create({
@@ -72,7 +75,7 @@ function User() {
       <div className='accountManage'>
         <form onSubmit={handleDeposit}>
           <label>
-          Valor: <input type='text' 
+          Valor: <input type='number' 
           value = {deposit}
           onChange={(e) => setDeposit((e.target.value))}>
           </input>
@@ -87,12 +90,12 @@ function User() {
             <label>
               CPF: <input type='text'
               value = {cpf}
-              onChange={(e) => setCpf((e.target.value))}>
+              onChange={(e) => setCpf((e.target.value.replace(/\D/g, '')))}>
               </input>
             </label>
 
             <label>
-              Valor: <input type='text' 
+              Valor: <input type='number' 
               placeholder='valor'
               value = {transfer}
               onChange={(e) => setTransfer((e.target.value))}>
@@ -102,6 +105,8 @@ function User() {
           <button type='submit'>Transferir</button> 
         </form>
       </div>
+
+      <button onClick={singOut}>Sair</button>
 
      </Box>
      </Container>
