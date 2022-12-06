@@ -1,11 +1,6 @@
 <div align="center" id="top"> 
 
 # <div align="center"> Digital bank</div>
-<p align="center">Este projeto simula um banco digital com a posibilídade de fazer dois tipos de transações.
-Após logado é possível fazer depósitos e transferências entre contas cadastradas. também existe a possibilidade de cadastrar novas contas, sendo permitido somente uma conta por CPF.
-
-Este projeto utiliza o Create React App e uma API criada em NodeJS usando o mongoDB como banco de dados. </p>
-
 
 <p align="center">
   <a href="#dart-about">Sobre</a> &#xa0; | &#xa0; 
@@ -19,7 +14,10 @@ Este projeto utiliza o Create React App e uma API criada em NodeJS usando o mong
 
 ## :dart: Sobre ##
 
-Simulação de um banco digital criado usando ReactJS, nodeJs e mongoDB.
+<p align="center">Este projeto simula um banco digital com a posibilídade de fazer dois tipos de transações.
+Após logado é possível fazer depósitos e transferências entre contas cadastradas. também existe a possibilidade de cadastrar novas contas, sendo permitido somente uma conta por CPF.
+
+Este projeto utiliza o Create React App e uma API criada em NodeJS usando o mongoDB como banco de dados. </p>
 
 ## :rocket: Tecnologias ##
 
