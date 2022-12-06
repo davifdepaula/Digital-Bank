@@ -36,7 +36,7 @@ Antes de iniciar você precisa ter [Git](https://git-scm.com), [Node](https://no
 # Clone this project
 $ git clone git@github.com:davifdepaula/Digital-Bank.git
 
-Será necessario instalar as dependências do Front-end e do Back-end em suas respectivas pastas.
+Será necessario instalar as dependências no Front-end e no Back-end em suas respectivas pastas.
 
 # Instalar dependências
 $ npm install 
