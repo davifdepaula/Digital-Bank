@@ -1,8 +1,8 @@
 <div align="center" id="top"> 
 
 # <div align="center"> Digital bank</div>
-<p align="center">Esse projeto simula um banco digital com a posibilídade de fazer dois tipos de transações.
-Após logado é possível fazer depositos e transferências entre contas cadastradas. 
+<p align="center">Este projeto simula um banco digital com a posibilídade de fazer dois tipos de transações.
+Após logado é possível fazer depósitos e transferências entre contas cadastradas. também existe a possibilidade de cadastrar novas contas, sendo permitido somente uma conta por CPF.
 
 Este projeto utiliza o Create React App e uma API criada em NodeJS usando o mongoDB como banco de dados. </p>
 
@@ -12,14 +12,14 @@ Este projeto utiliza o Create React App e uma API criada em NodeJS usando o mong
   <a href="#rocket-technologies">Tecnologias</a> &#xa0; | &#xa0;
   <a href="#white_check_mark-requirements">Requerimentos</a> &#xa0; | &#xa0;
   <a href="#checkered_flag-starting">Executando a aplicação</a> &#xa0; | &#xa0;
-  <a href="https://github.com/davifdepaula" target="_blank">Author</a>
+  <a href="https://github.com/davifdepaula" target="_blank">Autor</a>
 </p>
 
 <br>
 
 ## :dart: Sobre ##
 
-Uma simulação de um banco digital criado usando ReactJS, nodeJs e mongoDB.
+Simulação de um banco digital criado usando ReactJS, nodeJs e mongoDB.
 
 ## :rocket: Tecnologias ##
 
@@ -38,7 +38,7 @@ Antes de iniciar você precisa ter [Git](https://git-scm.com), [Node](https://no
 # Clone this project
 $ git clone git@github.com:davifdepaula/Digital-Bank.git
 
-Será necessari instalar as dependências do Front-end e do Back-end em suas respectivas pastas.
+Será necessario instalar as dependências do Front-end e do Back-end em suas respectivas pastas.
 
 # Instalar dependências
 $ npm install 
@@ -60,7 +60,7 @@ Depois acesse com a pasta do front-end e execute:
 # O servidor do front-end vai iniciar em <http://localhost:3000>, enquanto o back-end vai rodar em   <http://localhost:4000>
 ```
 
-Feito com :heart:  <a href="https://github.com/davifdepaula" target="_blank">Davi Ferreira de Paula</a>
+Feito com :heart: por <a href="https://github.com/davifdepaula" target="_blank">Davi Ferreira de Paula</a>
 
 &#xa0;
 
