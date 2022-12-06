@@ -42,6 +42,7 @@ function Register() {
                         CPF: <input name="cpf" type="text" value={cpf} onChange={(e) => setCpf(e.target.value.replace(/\D/g, ''))}/>
                         Senha: <input name="password" type="text" value={password} onChange={(e) => setPassword(e.target.value)}/>
                         <button type="submit">Registrar</button>
+                        <button onClick={()=> navigate("/")}>Voltar</button>
                     </form>
                 </Box>
             </main>
