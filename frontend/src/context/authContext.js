@@ -36,7 +36,7 @@ export const AuthProvider = ({ children }) => {
         localStorage.setItem("@Auth:token", response.data.token);
       }
     } catch (error) {
-      console.log(error);
+      alert(error.response.data.msg)
     }
   };
 

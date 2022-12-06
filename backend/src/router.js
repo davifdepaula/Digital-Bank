@@ -24,6 +24,10 @@ router.post("/register", async(req, res) => {
         return res.status(422).json({msg: "CPF é obrigatorio no cadastro"})
     }
 
+    if (cpf.length !== 11) {
+        return res.status(422).json({msg: "CPF deve ter 11 caracteres"})
+    }
+
     if (!password) {
         return res.status(422).json({msg: "A senha é obrigatorio no cadastro"})
     }
@@ -59,6 +63,10 @@ router.post('/login', async(req, res) => {
     if (!cpf) {
         return res.status(422).json({msg: "CPF é necessario para realizar o login"})
          
+    }
+
+    if (cpf.length !== 11) {
+        return res.status(422).json({msg: "CPF deve ter 11 caracteres"})
     }
 
     if (!password) {
@@ -127,6 +135,11 @@ router.post('/transfer/:id', checkToken, async(req,res) => {
     if (!cpf) {
         return res.status(422).json({msg: "CPF da conta é necessario para a transferência"})
     }
+
+    if (cpf.length !== 11) {
+        return res.status(422).json({msg: "CPF deve ter 11 caracteres"})
+    }
+    
     const id = req.params.id 
     const user = await Client.findById(id, '-password')
     const receiver = await Client.findOne({cpf: cpf})
